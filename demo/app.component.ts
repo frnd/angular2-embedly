@@ -14,7 +14,7 @@ import { EmbedlyDirective, EmbedlyService } from './../angular2-embedly';
     <em-embed [url]="url" [width]="600"></em-embed>
     `,
   directives: [EmbedlyDirective],
-  providers: [provide('EMBEDLY_KEY', { useValue: '6f1082b9288e4d9bbe00d22873f206e3' })]
+  providers: [provide('EMBEDLY_KEY', { useValue: '1ee042658d67466e991e3b74b0e26a56' })]
 })
 export class AppComponent {
   url: string = "https://www.youtube.com/watch?v=jofNR_WkoCE"
