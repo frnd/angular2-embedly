@@ -14,7 +14,7 @@ export class EmbedlyService {
   embed(inputUrl: string, maxwidth?: number, scheme?: string) {
     let params: URLSearchParams = new URLSearchParams();
     params.set('key', this.EMBEDLY_KEY);
-    params.set('url', encodeURIComponent(inputUrl));
+    params.set('url', inputUrl);
 
     if (typeof maxwidth !== 'undefined') {
       params.set('maxwidth', maxwidth.toString());

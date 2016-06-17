@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES5",
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
@@ -9,13 +9,8 @@
     "removeComments": false,
     "noImplicitAny": false
   },
-  "files": [
-    "typings/index.d.ts",
-    "angular2-embedly.ts",
-    "demo/app.component.ts",
-    "demo/main.ts"
-  ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "compileOnSave": false
 }
