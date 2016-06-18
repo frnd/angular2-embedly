@@ -7,4 +7,4 @@ export * from './src/services';
 export default {
   directives: [DIRECTIVES],
   providers: [PROVIDERS]
-}
+};
