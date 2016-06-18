@@ -11,7 +11,7 @@ export class EmbedlyService {
   constructor(private http: Http, @Inject('EMBEDLY_KEY') private EMBEDLY_KEY: string) {
   }
 
-  embed(inputUrl: string, maxwidth?: number, scheme?: string) {
+  embed(inputUrl: string, maxwidth?: number, scheme?: string): Promise<any> {
     let params: URLSearchParams = new URLSearchParams();
     params.set('key', this.EMBEDLY_KEY);
     params.set('url', inputUrl);
@@ -30,7 +30,7 @@ export class EmbedlyService {
       .catch(this.handleError);
   };
 
-  extract(inputUrl: string) {
+  extract(inputUrl: string): Promise<any> {
     let params: URLSearchParams = new URLSearchParams();
     params.set('key', this.EMBEDLY_KEY);
     params.set('url', encodeURIComponent(inputUrl));
@@ -41,7 +41,7 @@ export class EmbedlyService {
       .catch(this.handleError);
   };
 
-  private handleError(error: any) {
+  private handleError(error: any): Promise<any> {
     console.error('An error occurred', error);
     return Promise.reject(error.message || error);
   }
