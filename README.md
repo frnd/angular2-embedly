@@ -101,7 +101,7 @@ Run `npm test` to run tests once or `npm run test:watch` to continually run test
 ```bash
 npm run release
 ```
-
+ 
 ## License
 
 MIT
