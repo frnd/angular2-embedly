@@ -1,0 +1,1 @@
+﻿var typedoc = typedoc || {};typedoc.search = typedoc.search || {};typedoc.search.data = {"kinds":{"32":"Variable"},"rows":[{"id":0,"kind":32,"name":"PROVIDERS","url":"globals.html#providers","classes":"tsd-kind-variable"},{"id":1,"kind":32,"name":"DIRECTIVES","url":"globals.html#directives","classes":"tsd-kind-variable"}]};

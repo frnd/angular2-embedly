@@ -11,6 +11,15 @@ export class EmbedlyService {
   constructor(private http: Http, @Inject('EMBEDLY_KEY') private EMBEDLY_KEY: string) {
   }
 
+  /**
+   * oEmbed is Embedly’s basic offering, providing a simple API for embedding content from any URL. 
+   * This method follows the oEmbed standard.
+   * 
+   * @param inputUrl  The URL is to retrieve embedding information. 
+   * @param maxwidth  This is the maximum width of the embed in pixels. maxwidth is used for scaling 
+   *                  down embeds so they fit into a certain width.
+   * @param scheme    scheme allows to set the protocol scheme explicity to http or https.
+   */
   embed(inputUrl: string, maxwidth?: number, scheme?: string): Promise<any> {
     let params: URLSearchParams = new URLSearchParams();
     params.set('key', this.EMBEDLY_KEY);
@@ -30,6 +39,13 @@ export class EmbedlyService {
       .catch(this.handleError);
   };
 
+  /**
+   * Extract allows users to dive into specifics on a site and beyond. With this API 
+   * we allow developers to extract article text, topics, and retrieve more meta-data 
+   * about articles, blog posts, and stories.
+   * 
+   * @param inputUrl  The URL is to retrieve embedding information.
+   */
   extract(inputUrl: string): Promise<any> {
     let params: URLSearchParams = new URLSearchParams();
     params.set('key', this.EMBEDLY_KEY);
