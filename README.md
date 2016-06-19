@@ -20,7 +20,8 @@ https://frnd.github.io/angular2-embedly/demo/
 
 ## About
 
-embed.ly directive and service for Angular2
+[Embedly](http://embed.ly/) makes it easy display third party content in your website. THis project contains
+an Angular2 directive and a service to ease the useage of embedly in your angularjs application. 
 
 ## Installation
 
