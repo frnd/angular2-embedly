@@ -1,6 +1,6 @@
 {
   "name": "angular2-embedly",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "embed.ly directive and service for Angular2",
   "main": "./angular2-embedly.js",
   "typings": "./angular2-embedly.d.ts",
